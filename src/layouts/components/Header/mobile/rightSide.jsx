@@ -9,7 +9,7 @@ import { Completions, MileStones, Performance } from "layouts/components/Sidebar
 
 function Content({ toggleSidebar }) {
     return (
-        <VStack h='full' pt={10} pb='120px' justify='space-between' spacing={6} fontFamily='Space Grotesk'>
+        <VStack minH='full' pt={10} pb={14} justify='space-between' spacing={6} fontFamily='Space Grotesk'>
             
             <HStack w='full' justify='space-between'>
                 <Image
@@ -40,7 +40,7 @@ function RightSidebar({ isOpen, toggleSidebar }) {
             <DrawerOverlay />
             <DrawerContent>
                 <DrawerCloseButton />
-                <DrawerBody bgColor={ElementColor.washedWhite}>
+                <DrawerBody bgColor={ElementColor.washedWhite} overflowY='auto' className='scroll-custom'>
                     <Content
                         toggleSidebar={toggleSidebar}
                     />

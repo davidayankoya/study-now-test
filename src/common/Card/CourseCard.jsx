@@ -22,7 +22,7 @@ function InfoItem({ icon, text, color }) {
 function CourseCard({ w, bgColor, textColor, img, title, shortTitle, school, timeLeft }) {
     return (
         <HStack w={w ?? 'full'} spacing={4} borderRadius='10px' bgColor={bgColor} p='18px'>
-            <Box w='35%' borderRadius='10px' bgColor={ElementColor.white}>
+            <Box w={['35%', '35%', '30%']} borderRadius='10px' bgColor={ElementColor.white}>
                 <Image
                     src={img}
                     w='full'
@@ -31,7 +31,7 @@ function CourseCard({ w, bgColor, textColor, img, title, shortTitle, school, tim
                 />
             </Box>
 
-            <VStack w='full' minH={['120px', '120px', '150px']} align='start' justify='space-between' spacing={[6, 6, 0]}>
+            <VStack w={['65%', '65%', '60%']} minH={['120px', '120px', '150px']} align='start' justify='space-between' spacing={[6, 6, 0]}>
                 <Box py={2} px={4} bgColor={ElementColor.white} borderRadius='10px'>
                     <TextSm color={ElementColor.orange} fontSize={['13px', '13px', '14px']}>{shortTitle}</TextSm>
                 </Box>

@@ -7,12 +7,13 @@ function Main({ children, fullPage, className }) {
     return (
         <Box
             as='main'
-            maxH='100vh'
+            maxH={['', '', '100vh']}
             w={['full', 'full', 'full']}
             px={[4, 4, 6]}
-            py={[3, 3, 8]}
+            pt={[3, 3, 8]}
+            pb={[6, 6, 8]}
             fontFamily='Space Grotesk'
-            overflowY='auto'
+            overflowY={['hidden', 'hidden', 'auto']}
             className={`${className} scroll-custom`}
         >
             {children}

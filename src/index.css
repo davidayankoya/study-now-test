@@ -4,6 +4,7 @@ html {
 
 body {
     margin: 0;
+    height: 100vh;
     font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -11,6 +12,10 @@ body {
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Open Sans';
+}
+
+#root {
+    height: 100vh;
 }
 
 .scroll-custom::-webkit-scrollbar {

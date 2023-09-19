@@ -12,7 +12,7 @@ function ChildrenWrapper({ children }) {
         <Box
             w={['full', 'full', '43%']}
             mt={['85px', '85px', '0px']}
-            maxH='100vh'
+            maxH={['100vh', '100vh', '100vh']}
         >
             {children}
         </Box>

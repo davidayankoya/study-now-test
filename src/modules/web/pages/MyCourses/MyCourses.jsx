@@ -43,23 +43,21 @@ const designItems = [
 
 function MyCoursesMain() {
     return (
-        <React.Fragment>
-            <VStack w='full' align='start' spacing={6} pt={[2, 2, 4]} px={[2, 2, 6]}>
-                <PageHeading title='My Courses' />
-                <TextMd>Welcome back Unique, take your next class</TextMd>
+        <VStack w='full' align='start' spacing={6} pt={[2, 2, 4]} px={[2, 2, 6]}>
+            <PageHeading title='My Courses' />
+            <TextMd>Welcome back Unique, take your next class</TextMd>
 
-                <Tabs
-                    tabHeads={['Design', 'HTML', 'CSS', 'Javascript']}
-                    tabPanels={[
-                        <CategoryList items={designItems} name='Design' />,
-                        <CategoryList items={[]} name='HTML' />,
-                        <CategoryList items={[]} name='CSS' />,
-                        <CategoryList items={[]} name='Javascript' />,
-                    ]}
-                />
+            <Tabs
+                tabHeads={['Design', 'HTML', 'CSS', 'Javascript']}
+                tabPanels={[
+                    <CategoryList items={designItems} name='Design' />,
+                    <CategoryList items={[]} name='HTML' />,
+                    <CategoryList items={[]} name='CSS' />,
+                    <CategoryList items={[]} name='Javascript' />,
+                ]}
+            />
 
-            </VStack>
-        </React.Fragment>
+        </VStack>
     )
 }
 

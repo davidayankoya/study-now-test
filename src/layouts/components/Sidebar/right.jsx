@@ -114,7 +114,7 @@ function RightSidebar () {
     return (
         <DesktopOnly style={{ width: '33%' }}>
             <Box bgColor={ElementColor.washedWhite} px='40px' w='full' h='100vh' overflowY='auto' className='scroll-custom'>
-                <VStack minH='100vh' py={10} spacing={6} fontFamily='Space Grotesk'>
+                <VStack minH='100vh' pt={10} pb={14} spacing={6} fontFamily='Space Grotesk'>
                     
                     <HStack w='full' justify='space-between'>
                         <Image
