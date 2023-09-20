@@ -14,14 +14,25 @@ function InfoItem({ icon, text, color }) {
                 h='24px'
                 alt={`${text} icon`}
             />
-            <TextLg color={color} fontSize={['12px', '12px', '14px']}>{text}</TextLg>
+            <TextLg color={color} fontSize={['12px', '12px', '14px']}>
+                {text}
+            </TextLg>
         </HStack>
     )
 }
 
 function CourseCard({ w, bgColor, textColor, img, title, shortTitle, school, timeLeft }) {
     return (
-        <HStack w={w ?? 'full'} spacing={4} borderRadius='10px' bgColor={bgColor} p='18px'>
+        <HStack
+            w={w ?? 'full'}
+            spacing={4}
+            borderRadius='10px'
+            bgColor={bgColor}
+            p='18px'
+            transition='0.3s ease-out all'
+            _hover={{ transform: 'translateY(-3px)' }}
+            cursor='pointer'
+        >
             <Box w={['35%', '35%', '30%']} borderRadius='10px' bgColor={ElementColor.white}>
                 <Image
                     src={img}

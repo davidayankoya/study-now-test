@@ -6,7 +6,7 @@ import React from 'react'
 
 function CategoryList({ name, items = [] }) {
     return (
-        <VStack w='full' align='start' spacing={8}>
+        <VStack w='full' align='start' spacing={5} py={4}>
             {items.length === 0 ? (
                 <Center w='full' h={['200px', '300px', '400px']}>
                     <TextMd>No {name} courses found</TextMd>
